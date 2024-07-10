@@ -3,8 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 10vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  background-color: #282c34;
   color: white;
 }
 
@@ -35,4 +36,62 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #61dafb;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #61dafb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+        background-color: #21a1f1;
+    }
+
+.cost-list {
+    display: grid;
+    gap: 10px;
+}
+
+.cost-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 2vmin;
+}
+
+.cost-item > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.cost-item button {
+    margin-left: 10px;
+}
+.app-info {
+    font-size: 2vmin;
 }

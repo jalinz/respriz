@@ -466,11 +466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2023uni\\msa\\respriz\\Respriz.Api\\Respriz.Api.csproj",
+      "projectUniqueName": "D:\\2023uni\\msa\\respriz\\backend\\Respriz.Api.csproj",
       "projectName": "Respriz.Api",
-      "projectPath": "D:\\2023uni\\msa\\respriz\\Respriz.Api\\Respriz.Api.csproj",
+      "projectPath": "D:\\2023uni\\msa\\respriz\\backend\\Respriz.Api.csproj",
       "packagesPath": "C:\\Users\\lee\\.nuget\\packages\\",
-      "outputPath": "D:\\2023uni\\msa\\respriz\\Respriz.Api\\obj\\",
+      "outputPath": "D:\\2023uni\\msa\\respriz\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
