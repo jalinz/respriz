@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\backend",
+    "\\frontend",
+    "\\frontend\\src"
   ],
+  "SelectedNode": "\\backend\\Respriz.Api",
   "PreviewInSolutionExplorer": false
 }

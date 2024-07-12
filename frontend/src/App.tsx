@@ -18,6 +18,7 @@ function App() {
     const [searchTerm, setSearchTerm] = useState('');
     const [sortBy, setSortBy] = useState<'asc' | 'desc'>('asc');
 
+    // Fetch data from IndexedDB when the component mounts
     useEffect(() => {
         async function fetchData() {
             const data = await getCosts();
@@ -28,12 +29,26 @@ function App() {
 
     const handleAddCost = async () => {
         if (restaurant && price !== '' && date !== '') {
+            const priceValue = Number(price);
+            if (priceValue <= 0) {
+                alert('Please enter a positive number for the cost.');
+                return;
+            }
+
+            const today = new Date();
+            const enteredDate = new Date(date);
+            if (enteredDate >= today) {
+                alert('Please enter a date before today.');
+                return;
+            }
+
             const newCost: Cost = {
                 restaurant,
-                price: Number(price),
+                price: priceValue,
                 date,
             };
-            await addCost(newCost);
+            const id = await addCost(newCost);
+            newCost.id = id; // Set the id of the new cost
             setCosts([...costs, newCost]);
 
             // Clear input fields
