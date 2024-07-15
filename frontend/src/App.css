@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
@@ -8,90 +8,175 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  background-color: #282c34;
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+    .App-header .header-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .App-header .App-logo {
+        height: 10vmin;
+        margin-right: 20px;
+    }
+
+.header-titles h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-titles h2 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 input {
-    margin: 5px;
-    padding: 10px;
+    margin: 3px;
+    padding: 7px;
     border-radius: 5px;
     border: 2px solid #61dafb;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
+    background-color: #f0f0f0;
 }
 
 button {
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 3px;
+    padding: 7px 15px;
     border-radius: 5px;
     border: none;
     background-color: #61dafb;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button:hover {
+    button:hover {
         background-color: #21a1f1;
     }
 
-.cost-list {
+    .cost-list {
+    width: 100%;
+    max-width: 600px;
     display: grid;
     gap: 10px;
 }
 
 .cost-item {
-    border: 1px solid #ccc;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #61dafb;
+    background-color: #f0f0f0;
+    color: black;
 }
 
-.date {
-    font-size: 2vmin;
+    .cost-item .cost {
+        font-size: 24px; /* Set the size to match the input box */
+        font-weight: bold;
+        margin-right: 20px; /* Add space between the cost and other details */
+    }
+
+    .cost-item .details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        font-size: 16px; /* Set the same size for other info */
+        color: black;
+    }
+
+    .cost-item .name {
+        font-weight: bold;
+    }
+
+.date, .location {
+    margin-bottom: 5px;
 }
 
-.cost-item > div {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+.cost-item .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
 }
 
-.cost-item button {
-    margin-left: 10px;
-}
+    .cost-item .action-buttons button {
+        width: 100px;
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .cost-item .action-buttons .edit-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+        .cost-item .action-buttons .edit-button:hover {
+            background-color: #45a049;
+        }
+
+    .cost-item .action-buttons .delete-button {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+        .cost-item .action-buttons .delete-button:hover {
+            background-color: #e53935;
+        }
+
 .app-info {
-    font-size: 2vmin;
+    font-size: 1vmin;
+}
+
+.search-bar {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .App-header {
+        font-size: calc(8px + 2vmin);
+    }
+
+    input, button {
+        font-size: 12px;
+    }
+
+    .cost-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .cost-item .details {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .cost-item .action-buttons {
+            align-self: stretch;
+        }
 }
