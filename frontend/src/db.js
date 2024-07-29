@@ -24,3 +24,8 @@ export async function deleteCost(id) {
     const db = await dbPromise;
     await db.delete('costs', id);
 }
+
+export async function updateCost(data) {
+    const db = await dbPromise;
+    await db.put('costs', data); // Use `put` to update or insert data
+}

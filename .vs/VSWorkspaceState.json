@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\backend",
+    "\\backend\\Respriz.Api",
     "\\frontend",
     "\\frontend\\src"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\frontend\\src\\App.test.tsx",
   "PreviewInSolutionExplorer": false
 }

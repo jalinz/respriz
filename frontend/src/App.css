@@ -1,20 +1,33 @@
-.App {
+/* Make sure the body and html cover the entire viewport */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .App {
     text-align: center;
-}
-
-.App-logo {
+    width: 100%;
+    height: 100%;
+    background: #282c34; /* Set your desired background color */
+    color: white; /* Change text color to white */
+  }
+  
+  .App-logo {
     height: 10vmin;
     pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+      animation: App-logo-spin infinite 20s linear;
     }
-}
-
-.App-header {
-    background-color: #282c34;
+  }
+  
+  .App-header {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,30 +35,30 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-}
-
-    .App-header .header-content {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .App-header .App-logo {
-        height: 10vmin;
-        margin-right: 20px;
-    }
-
-.header-titles h1 {
+  }
+  
+  .App-header .header-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .App-header .App-logo {
+    height: 10vmin;
+    margin-right: 20px;
+  }
+  
+  .header-titles h1 {
     margin: 0;
     font-size: 2.5rem;
-}
-
-.header-titles h2 {
+  }
+  
+  .header-titles h2 {
     margin: 0;
     font-size: 1.5rem;
-}
-
-input {
+  }
+  
+  input {
     margin: 3px;
     padding: 7px;
     border-radius: 5px;
@@ -53,9 +66,9 @@ input {
     font-size: 14px;
     outline: none;
     background-color: #f0f0f0;
-}
-
-button {
+  }
+  
+  button {
     margin: 3px;
     padding: 7px 15px;
     border-radius: 5px;
@@ -65,20 +78,20 @@ button {
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-    button:hover {
-        background-color: #21a1f1;
-    }
-
-    .cost-list {
+  }
+  
+  button:hover {
+    background-color: #21a1f1;
+  }
+  
+  .cost-list {
     width: 100%;
     max-width: 600px;
     display: grid;
     gap: 10px;
-}
-
-.cost-item {
+  }
+  
+  .cost-item {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -87,96 +100,141 @@ button {
     border: 2px solid #61dafb;
     background-color: #f0f0f0;
     color: black;
+  }
+  .cost-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #61dafb;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
 }
 
-    .cost-item .cost {
-        font-size: 24px; /* Set the size to match the input box */
-        font-weight: bold;
-        margin-right: 20px; /* Add space between the cost and other details */
-    }
+.cost-item .cost {
+    font-size: 24px; /* Set the size to match the input box */
+    font-weight: bold;
+    margin-right: 20px; /* Add space between the cost and other details */
+}
 
-    .cost-item .details {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        font-size: 16px; /* Set the same size for other info */
-        color: black;
-    }
+.cost-item .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 16px; /* Set the same size for other info */
+    color: #fff; /* White text */
+}
 
-    .cost-item .name {
-        font-weight: bold;
-    }
+.cost-item .name {
+    font-weight: bold;
+}
 
 .date, .location {
     margin-bottom: 5px;
 }
 
-.cost-item .action-buttons {
+  .cost-item .action-buttons {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin-left: auto;
-}
-
-    .cost-item .action-buttons button {
-        width: 100px;
-        padding: 7px;
-        border-radius: 5px;
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    .cost-item .action-buttons .edit-button {
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        transition: background-color 0.3s;
-    }
-
-        .cost-item .action-buttons .edit-button:hover {
-            background-color: #45a049;
-        }
-
-    .cost-item .action-buttons .delete-button {
-        background-color: #f44336;
-        color: white;
-        border: none;
-        transition: background-color 0.3s;
-    }
-
-        .cost-item .action-buttons .delete-button:hover {
-            background-color: #e53935;
-        }
-
-.app-info {
+  }
+  
+  .cost-item .action-buttons button {
+    width: 100px;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cost-item .action-buttons .edit-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cost-item .action-buttons .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .cost-item .action-buttons .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cost-item .action-buttons .delete-button:hover {
+    background-color: #e53935;
+  }
+  
+  .app-info {
     font-size: 1vmin;
-}
-
-.search-bar {
+  }
+  
+  .search-bar {
     margin: 10px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .App-header {
+      font-size: calc(8px + 2vmin);
+    }
+  
+    input, button {
+      font-size: 12px;
+    }
+  
+    .cost-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cost-item .details {
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .cost-item .action-buttons {
+      align-self: stretch;
+    }
+  }
+  .menu-list {
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    gap: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .App-header {
-        font-size: calc(8px + 2vmin);
-    }
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #61dafb; /* Optional border color */
+  margin-bottom: 16px;
+}
 
-    input, button {
-        font-size: 12px;
-    }
+.menu-item .item-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
-    .cost-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.menu-item .item-info .price {
+  font-size: 1.2rem;
+}
 
-        .cost-item .details {
-            align-items: flex-start;
-            text-align: left;
-        }
-
-        .cost-item .action-buttons {
-            align-self: stretch;
-        }
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 8px;
 }
