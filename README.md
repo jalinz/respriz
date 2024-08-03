@@ -18,6 +18,8 @@
 - **Storybook**: For component development and documentation
 - **WebSocket**: For real-time updates
 
+## What I’m Proud Of
+One thing I'm particularly proud of is how this app solves my problem of tracking and sharing restaurant costs. The solution not only addresses my needs but also provides a user-friendly experience for managing dining expenses.
 ## Installation
 
 To get started with the project, follow these steps:
