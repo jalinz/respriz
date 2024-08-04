@@ -17,15 +17,10 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/.vs/respriz/FileContentIndex/0e9ea731-0eb8-4b86-9104-7c7890631c03.vsidx
-/.vs/respriz/FileContentIndex/31e63ea0-b913-4fb1-91d5-17967b06f626.vsidx
-/.vs/respriz/FileContentIndex/349dafd8-8ca4-4dda-ac17-ef9c747cfdeb.vsidx
-/.vs/respriz/FileContentIndex/57952ac1-23ac-48ca-824c-184250fa3c00.vsidx
-/.vs/respriz/FileContentIndex/1eeed8c1-d6a1-4744-9114-7f15c4835548.vsidx
-/.vs/respriz/FileContentIndex/b09aaa3d-de5c-457c-b563-ea2a6d905509.vsidx
-/.vs/respriz/FileContentIndex/feca98f4-396d-4920-b21b-def9eba492e4.vsidx
-/.vs/respriz/FileContentIndex
+
+/firebase-config.js

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Respriz.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f5004071a30e9121960f005b927d529e56b6f6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce930db095e49263e20cdb384bb3043ae16a2bb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Respriz.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Respriz.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
