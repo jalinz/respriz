@@ -6,13 +6,7 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAvNEuYXienDuZSYBsRGRiJzUiIjKKEzVw",
-  authDomain: "respriz.firebaseapp.com",
-  projectId: "respriz",
-  storageBucket: "respriz.appspot.com",
-  messagingSenderId: "486863139916",
-  appId: "1:486863139916:web:a538164ab9fb87c789b0e9",
-  measurementId: "G-0YDHGXX0SP"
+
 };
 
 // Initialize Firebase
