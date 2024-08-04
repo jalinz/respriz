@@ -24,3 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /firebase-config.ts
+
+# Storybook build
+storybook-static/
