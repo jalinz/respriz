@@ -104,6 +104,9 @@ function Home() {
         setLocation(cost.location);
         setIsEditing(true);
         setCurrentCostId(cost.id ?? null);
+
+        // Scroll to the top of the page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const handleDeleteCost = async (id: string | undefined) => {
@@ -141,7 +144,7 @@ function Home() {
     };
 
     // const handleAnalyzeTrends = async () => {
-    //     const costsText = costs.map(cost => Restaurant: ${cost.restaurant}, Price: ${cost.price}, Date: ${cost.date}).join('\n');
+    //     const costsText = costs.map(cost => `Restaurant: ${cost.restaurant}, Price: ${cost.price}, Date: ${cost.date}`).join('\n');
     //     const analysis = await analyzeTrends(costsText);
     //     setTrendAnalysis(analysis);
     // };
