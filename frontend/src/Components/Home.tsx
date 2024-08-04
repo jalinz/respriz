@@ -104,12 +104,9 @@ function Home() {
         setLocation(cost.location);
         setIsEditing(true);
         setCurrentCostId(cost.id ?? null);
-<<<<<<< HEAD
 
         // Scroll to the top of the page
         window.scrollTo({ top: 0, behavior: 'smooth' });
-=======
->>>>>>> 7d49a2d92e19e0e10b94e3b5e534fab5dfca0871
     };
 
     const handleDeleteCost = async (id: string | undefined) => {
@@ -147,11 +144,7 @@ function Home() {
     };
 
     // const handleAnalyzeTrends = async () => {
-<<<<<<< HEAD
     //     const costsText = costs.map(cost => `Restaurant: ${cost.restaurant}, Price: ${cost.price}, Date: ${cost.date}`).join('\n');
-=======
-    //     const costsText = costs.map(cost => Restaurant: ${cost.restaurant}, Price: ${cost.price}, Date: ${cost.date}).join('\n');
->>>>>>> 7d49a2d92e19e0e10b94e3b5e534fab5dfca0871
     //     const analysis = await analyzeTrends(costsText);
     //     setTrendAnalysis(analysis);
     // };
@@ -261,8 +254,4 @@ function Home() {
     );
 }
 
-<<<<<<< HEAD
 export default Home;
-=======
-export default Home;
->>>>>>> 7d49a2d92e19e0e10b94e3b5e534fab5dfca0871
